@@ -1,0 +1,13 @@
+apiVersion: v1beta1
+kind: pods
+metadata:
+  labels:
+    run: nginx-giropops
+    app: giropops-strigus
+  name: nginx_giropops
+spec:
+  containers:
+  - image: nginx
+    name: nginx_giropops
+    ports:
+    - containerPort: 80
